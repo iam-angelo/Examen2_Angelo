@@ -9,21 +9,18 @@ namespace Examen2.Clases
 {
     public class Conexion
     {
-        public class Connexion
-        {
             public static SqlConnection getConnection()
             {
                 string conex1 = ConfigurationManager.ConnectionStrings["conex"].ConnectionString;
-                SqlConnection cnx22 = new SqlConnection(conex1);
-                cnx22.Open();
+                SqlConnection cnx222 = new SqlConnection(conex1);
+                cnx222.Open();
 
-                return cnx22;
+                return cnx222;
             }
 
-            public static void closeConnection(SqlConnection cnx2)
+            public static void closeConnection(SqlConnection cnx22)
             {
-                cnx2.Close();
+                cnx22.Close();
             }
         }
     }
-}

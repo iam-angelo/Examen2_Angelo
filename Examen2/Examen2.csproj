@@ -67,18 +67,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Asignaciones.aspx" />
     <Content Include="Css\master.css" />
+    <Content Include="DetallesReparacion.aspx" />
     <Content Include="Equipos.aspx" />
+    <Content Include="login\assets\css\bootstrap.min.css" />
+    <Content Include="login\assets\css\style.css" />
+    <Content Include="login\assets\images\logo.png" />
+    <Content Include="login\assets\images\bg-mobile.jpg" />
+    <Content Include="login\assets\images\login-balloon.jpg" />
+    <Content Include="login\assets\js\bootstrap.min.js" />
+    <Content Include="login\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="login\assets\js\popper.min.js" />
+    <Content Include="login\index.html" />
+    <Content Include="Reparaciones.aspx" />
     <Content Include="Tecnicos.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asignaciones.aspx.cs">
+      <DependentUpon>Asignaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asignaciones.aspx.designer.cs">
+      <DependentUpon>Asignaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Asignaciones.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\DetallesReparacion.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Clases\ProcedureSQL.cs" />
     <Compile Include="Clases\Equipos.cs" />
+    <Compile Include="Clases\Reparaciones.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Clases\Tecnicos.cs" />
     <Compile Include="Clases\Usuarios.cs" />
+    <Compile Include="DetallesReparacion.aspx.cs">
+      <DependentUpon>DetallesReparacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetallesReparacion.aspx.designer.cs">
+      <DependentUpon>DetallesReparacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Equipos.aspx.cs">
       <DependentUpon>Equipos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +128,13 @@
     </Compile>
     <Compile Include="Inicio.Master.designer.cs">
       <DependentUpon>Inicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Reparaciones.aspx.cs">
+      <DependentUpon>Reparaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reparaciones.aspx.designer.cs">
+      <DependentUpon>Reparaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tecnicos.aspx.cs">
       <DependentUpon>Tecnicos.aspx</DependentUpon>
