@@ -1326,6 +1326,45 @@ namespace Examen2.Clases
 
             return ret;
         }
+        public static int validarLogin(string Username, string Password)
+        {
+            int ret = 0;
+            SqlConnection cnx2 = new SqlConnection();
+            try
+            {
+                using (cnx2 = Conexion.getConnection())
+                {
+                    SqlCommand cmd = new SqlCommand("VALIDAR_LOGIN1", cnx2)
+                    {
+                        CommandType = CommandType.StoredProcedure
+                    };
+                    cmd.Parameters.Add(new SqlParameter("@USERNAME", Username));
+                    cmd.Parameters.Add(new SqlParameter("@PASSWORD", Password));
+
+                    int result = cmd.ExecuteNonQuery();
+                    using (SqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        if (rdr.Read())
+                        {
+                            ret = rdr.GetInt32(0);
+                        }
+                    }
+                }
+            }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                ret = -1;
+            }
+            finally
+            {
+                Conexion.closeConnection(cnx2);
+            }
+
+
+            return ret;
+
+
+        }
     }
 
 }

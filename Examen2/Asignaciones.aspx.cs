@@ -52,7 +52,9 @@ namespace Examen2
 
         protected void add()
         {
-            Clases.Asignaciones asignacion = new Clases.Asignaciones();
+            Examen2.Asignaciones asignacion = new Examen2.Asignaciones();
+            
+            
             if (!ddRepracion.SelectedValue.Trim().Equals(string.Empty))
             {
                 asignacion.ReparacionID = int.Parse(ddRepracion.SelectedValue.Trim());
@@ -78,7 +80,7 @@ namespace Examen2
 
         protected void delete()
         {
-            Clases.Asignaciones asignacion = new Clases.Asignaciones();
+            Examen2.Asignaciones asignacion = new Examen2.Asignaciones();
             if (!txtId.Text.Trim().Equals(string.Empty))
             {
                 asignacion.AsignacionID = int.Parse(txtId.Text.Trim());
@@ -93,7 +95,7 @@ namespace Examen2
 
         protected void modificar()
         {
-            Clases.Asignaciones asignacion = new Clases.Asignaciones();
+            Examen2.Asignaciones asignacion = new Examen2.Asignaciones();
             if (!txtId.Text.Trim().Equals(string.Empty))
             {
                 asignacion.AsignacionID = int.Parse(txtId.Text.Trim());
@@ -123,7 +125,7 @@ namespace Examen2
 
         protected void consultar()
         {
-            Clases.Asignaciones asignacion = new Clases.Asignaciones();
+            Examen2.Asignaciones asignacion = new Examen2.Asignaciones();
             if (!txtId.Text.Trim().Equals(string.Empty))
             {
                 asignacion.AsignacionID = int.Parse(txtId.Text.Trim());

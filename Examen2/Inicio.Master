@@ -25,6 +25,10 @@
   <a href="Tecnicos.aspx">Tecnicos</a>
   <a href="Equipos.aspx">Equipos</a>
   <a href="Usuarios.aspx">Usuarios</a>
+   <a href="Asignaciones.aspx">Asignaciones</a>
+    <a href="DetallesReparacion.aspx">Detalles</a>
+    <a href="Reparaciones.aspx">Reparaciones</a>
+
   <div class="animation start-home"></div>
 </nav>
 

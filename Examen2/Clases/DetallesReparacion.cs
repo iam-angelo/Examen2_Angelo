@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Examen2
 {
-    public class DetallesReparacion
+    public partial class DetallesReparacion
     {
         public int DetalleID { get; set; }
         public int ReparacionID { get; set; }
